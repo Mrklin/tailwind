@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-bg: #0d1137;
+        --color-clifford: #5c3c92;
+        --color-neutral: #e5e5dc;
+      }
+    </style>
+</head>
+<body class="bg-bg h-screen m-0 p-0">
+    <div class="flex justify-center items-center flex-col gap-4 mt-10 md:mt-20 ">
+        <h1 class=" pl-5 md:pl-0 text-[1.8rem] md:text-[3rem] justify-center font-bold text-neutral">Hover on the image(s) to remove grayscale</h1>
+        <div class="flex justify-center items-center w-[100%] gap-4">
+            <div class="p-4 rounded-br-[30px] rounded-tl-[20px] bg-clifford w-[60%] md:w-fit"> 
+                <img src="./assets/profile1.png" alt="profile image" class="rounded-br-[20px] rounded-tl-[15px] filter grayscale hover:filter-none hover:opacity-100 opacity-50
+                transition-transform duration-200 hover:scale-110">  
+            </div>
+
+            <div class=" p-4 rounded-bl-[30px] rounded-tr-[20px] bg-clifford hidden md:block "> 
+                
+                <img src="./assets/profile2.png" alt="profile image" class="rounded-bl-[20px] rounded-tr-[15px] filter grayscale hover:filter-none hover:opacity-100 opacity-50
+                transition-transform duration-200 hover:scale-110" > 
+            </div>
+        </div>
+        <h1 class="text-[2rem] md:text-[4rem] font-bold text-neutral">
+            Introduction
+        </h1>
+    <div class="flex justify-start flex-col gap-3 pl-5 pb-5">
+        <p class="text-[16px] md:text-[25px] tracking-[3px] pb-4 text-neutral">Name:Iwuamadi Franklin </p>
+        <p class="text-[16px] md:text-[25px] tracking-[3px] pb-4 text-neutral">Current Nitch: Learning FrontEnd Development from CareerEx Platform</p>
+        <p class="text-[16px] md:text-[25px] tracking-[3px]  text-neutral">Hobbies: Coding, Watching Tv, Singing and more...</p>
+    </div>
+
+    <p class="text-neutral text-[18px] tracking-[3px] pl-5 md:pl-0">| You can help check for responsiveness 🙂 to prepare ahead of time arrigato gozaimasu |</p>
+
+    </div>
+</body>
+</html>
+
